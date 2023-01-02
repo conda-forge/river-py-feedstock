@@ -26,8 +26,10 @@ requirements:
     - cython
     - setuptools
     - pip
+    - numpy
   run:
     - python
+    - {{ pin_compatible('numpy') }}
 
 test:
   imports:
