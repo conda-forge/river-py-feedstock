@@ -1,16 +1,16 @@
 {% set name = "river-py" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/pbotros/river/archive/389b9ca6f76fdd2528aad96e67d33fc45a764d75.tar.gz
-  sha256: 7e4e6b19c7b284df1c6c8b500a342ad7d310a43d30f8f4e9ca3d987a9864b480
+  url: https://github.com/pbotros/river/archive/refs/tags/v1.0.3.tar.gz
+  sha256: e931af61f16433275f9bd6f2c27137af49c61557a510c79490e9e809544bd94c 
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
@@ -26,8 +26,10 @@ requirements:
     - cython
     - setuptools
     - pip
+    - numpy
   run:
     - python
+    - {{ pin_compatible('numpy') }}
 
 test:
   imports:
