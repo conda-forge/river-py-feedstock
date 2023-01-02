@@ -10,7 +10,7 @@ source:
   sha256: e931af61f16433275f9bd6f2c27137af49c61557a510c79490e9e809544bd94c 
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -22,7 +22,6 @@ requirements:
   host:
     - river-cpp {{ version }}
     - python
-    - glog
     - cython
     - setuptools
     - pip
