@@ -1,5 +1,5 @@
 {% set name = "river-py" %}
-{% set version = "1.0.6" %}
+{% set version = "1.0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pbotros/river/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 025e34ae3fadb51bed56e98f7457cf284273a4ce5a43e0d35f0ffc41ad553248
+  sha256: b48019681fcbeedf4cbc0467b51e17f485ac3ac95f5d363cb334c0966d15ba56
 
 build:
   number: 0
