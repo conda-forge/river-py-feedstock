@@ -1,13 +1,13 @@
 {% set name = "river-py" %}
-{% set version = "1.0.8" %}
+{% set version = "1.0.9" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/pbotros/river/archive/8368f6f4f1ac0ccb58c8b372efb3ed554c7f7d47.tar.gz
-  sha256: 873471b6899c0e6fa4641c56940d8239ed9f23324be1c94f24126bcbbc1a31b2
+  url: https://github.com/pbotros/river/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: 0a29e235d0c2c264639d11859f113f0a8f28e0b3819c7677f731f9eeb60cab20
 
 build:
   number: 0
