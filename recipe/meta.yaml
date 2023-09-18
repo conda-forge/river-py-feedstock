@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/pbotros/river/archive/botros/fix-python-bindings.tar.gz
-  sha256: 84777b4119407d078715f5a621ad7c4d64de6d6f6bed99bc39c6c0e843152264
+  url: https://github.com/pbotros/river/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: 8e730d12c59a187dc687ab8959e113494a0ef73a8d42315d93234d3b637c78fb
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
