@@ -1,13 +1,13 @@
 {% set name = "river-py" %}
-{% set version = "1.0.8" %}
+{% set version = "1.0.9" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/pbotros/river/archive/8368f6f4f1ac0ccb58c8b372efb3ed554c7f7d47.tar.gz
-  sha256: 873471b6899c0e6fa4641c56940d8239ed9f23324be1c94f24126bcbbc1a31b2
+  url: https://github.com/pbotros/river/archive/botros/fix-python-bindings.tar.gz
+  sha256: 84777b4119407d078715f5a621ad7c4d64de6d6f6bed99bc39c6c0e843152264
 
 build:
   number: 0
