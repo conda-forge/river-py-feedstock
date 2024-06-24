@@ -10,11 +10,12 @@ source:
   sha256: 222145f7e9ce1cdc8857ae03753b922cfe68168f4972597e0e8161fbad14350e
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - cmake
     - make  # [not win]
     - ninja  # [win]
@@ -32,7 +33,6 @@ requirements:
     - numpy
   run:
     - python
-    - {{ pin_compatible('numpy') }}
 
 test:
   imports:
